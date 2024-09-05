@@ -13,8 +13,8 @@ export class FirebaseService {
         messagingSenderId: "307559617597",
         appId: "1:307559617597:web:9d623f7485753743850654"
       };
-    const app = initializeApp(firebaseConfig);
-    const db = getFirestore(app);
+     this.app = initializeApp(firebaseConfig);
+     this.db = getFirestore(this.app);
   }
 
   getDb() {
